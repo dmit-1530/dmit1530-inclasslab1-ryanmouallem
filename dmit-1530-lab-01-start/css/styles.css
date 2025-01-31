@@ -8,7 +8,96 @@
     headings and button: 'Fjalla One', sans-serif;
     body copy: 'Open Sans', sans-serif;
 */
+:root {
+    --night:            #182222;
+    --dark-slate-gray:  #405B5B;
+    --french-gray:      #e2dfe7;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--french-gray);
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+a, h1, h2 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1, h2{
+    font-weight: bold;
+    color: var(--dark-slate-gray);
+} 
+
+main {
+    margin-bottom: 2.5rem;
+}
+
+header img {
+    width: 100vw;
+    margin-bottom: 3rem;
+}
+
+header p:first-of-type {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.75em;
+    height: 3.25em;
+    border: 3px solid var(--dark-slate-gray);
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    text-decoration: none;
+    color: var(--dark-slate-gray);
+}
+
+.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-container img {
+    margin-top: 1.25rem;
+    margin-bottom: 3.5rem;
+    width: 50%;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+h2, footer p {
+    color: var(--dark-slate-gray);
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: var(--night);
+    color: var(--french-gray);
+    text-align: center;
+    padding: 4rem;
 }
